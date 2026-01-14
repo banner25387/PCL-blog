@@ -23,7 +23,6 @@ export const defaultContentPageLayout: PageLayout = {
     }),
     Component.ArticleTitle(),
     Component.ContentMeta(),
-    Component.RecentNotes({ limit: 1 }),
     Component.TagList(),
   ],
   left: [
