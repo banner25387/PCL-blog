@@ -20,7 +20,7 @@ tags: [測試, Quartz]
 > 我想從 Quartz 重新開始。我希望你給我的指令可以一步一步來，不要一次給我太多資訊。可以像一般電腦課程那樣手把手帶我安裝嗎？架設完成大概要多久？我的電腦是 AMD 系統的 CPU 與顯卡。
 
 Claude 對話連結：  
-[https://claude.ai/share/a7e527b7-44af-4c79-a6d6-f63e48ab7de0](https://claude.ai/share/a7e527b7-44af-4c79-a6d6-f63e48ab7de0)
+https://claude.ai/share/b7ada661-0d4b-4069-90a3-836c1d1a78f2
 
 ## 建置進度
 
