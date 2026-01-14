@@ -1,10 +1,10 @@
 ---
-title: 第一篇文章（測試）
+title: Blog架設
 date: 2026-01-14
 tags: [測試, Quartz]
 ---
 
-# 第一篇文章
+# Blog架設：選用Quartz
 
 
 使用Claude手把手教我怎麼建置blog。
