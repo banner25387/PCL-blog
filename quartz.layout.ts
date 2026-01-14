@@ -41,6 +41,16 @@ export const defaultContentPageLayout: PageLayout = {
     Component.Explorer(),
   ],
   right: [
+    Component.ConditionalRender({
+      condition: (page) => page.fileData.slug === "index",
+      component: Component.RecentNotes({
+        title: "最新貼文",
+        limit: 1,
+        showTags: true,
+        // 避免把首頁 index 自己也算進「最新貼文」
+        filter: (f) => (f.filePath ? !f.filePath.endsWith("index.md") : true),
+      }),
+    }),
     Component.Graph(),
     Component.DesktopOnly(Component.TableOfContents()),
     Component.Backlinks(),
