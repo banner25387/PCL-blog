@@ -18,12 +18,11 @@ export const sharedPageComponents: SharedLayout = {
 export const defaultContentPageLayout: PageLayout = {
   beforeBody: [
     Component.ConditionalRender({
-      component: Component.Breadcrumbs(),
+      component: Component.RecentNotes({ limit: 1 }),
       condition: (page) => page.fileData.slug !== "index",
     }),
     Component.ArticleTitle(),
     Component.ContentMeta(),
-    Component.RecentNotes({ limit: 1 }),
     Component.TagList(),
   ],
   left: [

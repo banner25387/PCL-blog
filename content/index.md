@@ -8,8 +8,3 @@ Do my best. Don't give up. Be kind. Love myself.
 我也記得什麼時候我開始稍微喜歡上了我自己。  
 希望我能一直記得這些事。  
 
-
-## 最新文章
-
-> [!info] 
-> 更多文章請見左側 Explorer 或使用搜尋功能
