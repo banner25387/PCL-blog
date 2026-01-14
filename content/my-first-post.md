@@ -19,7 +19,11 @@ tags: [測試, Quartz]
 
 https://claude.ai/share/a7e527b7-44af-4c79-a6d6-f63e48ab7de0
 
+20260114完成架設
+後續稍微修改一下內容。
 
+之後在content資料夾中PO文，再將他上傳。
+上傳時要寫的東西有：
 
 ## 測試功能
 
@@ -27,21 +31,13 @@ https://claude.ai/share/a7e527b7-44af-4c79-a6d6-f63e48ab7de0
 - 可以列出清單
 
 ## 程式碼測試
-```python
-def hello():
-    print("Hello Quartz!")
-```
 
 
-## 後續
-20260114完成架設
-後續稍微修改一下內容。
-
-之後在content資料夾中PO文，再將他上傳。
-上傳時要寫的東西有：
 ```bash
 
-# 0. cd C:\Users\User\iCloudDrive\blog\quartz-blog\quartz
+# 0. 打開命令提示字元，然後更換資料夾
+
+cd C:\Users\User\iCloudDrive\blog\quartz-blog\quartz
 
 # 1. 在 content 資料夾新增 .md 檔案（用記事本或任何編輯器）
 
