@@ -8,3 +8,6 @@ Do my best. Don't give up. Be kind. Love myself.
 我也記得什麼時候我開始稍微喜歡上了我自己。  
 希望我能一直記得這些事。  
 
+
+**Contact:**  
+E-mail: peichili9028@gmail.com
