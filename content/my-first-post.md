@@ -1,7 +1,9 @@
 ---
-title: "{Blog架設}"
+title: Blog架設
 date: 2026-01-14
-tags: [測試, Quartz]
+tags:
+  - 測試
+  - Quartz
 ---
 
 # Blog 架設紀錄：選用 Quartz
