@@ -1,5 +1,5 @@
 ---
-title: Blog架設
+title: "{Blog架設}"
 date: 2026-01-14
 tags: [測試, Quartz]
 ---
