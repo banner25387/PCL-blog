@@ -1,3 +1,32 @@
 @use "./base.scss";
 
-// put your custom CSS here!
+// 行事曆中有文章的日期 — 紫羅蘭色
+.post-calendar .pc-day.has-post {
+  color: #BA92CA;
+}
+
+// 行事曆中文章連結的顏色
+.post-calendar .pc-list a {
+  color: #db6cad;
+}
+
+.post-calendar .pc-list a:hover {
+  color: var(--tertiary);
+}
+
+// Tag 標籤 — 黃底紫字
+a.internal.tag-link {
+  color: #BA92CA !important;
+  background-color: #fff29e !important;
+  border-color: #fff29e !important;
+}
+
+// 左側文章列表（Explorer）— 藍色
+.explorer a {
+  color: #509BEA !important;
+}
+
+// Footer 連結 — 橘色
+footer a {
+  color: #F38514 !important;
+}
