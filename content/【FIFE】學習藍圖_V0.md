@@ -1,7 +1,7 @@
 ---
 title: "【FIFE】學習藍圖_V0_20260615"
 date: "2026-06-15T15:54:00+08:00"
-tags: [FIFE][學習藍圖][Claude]
+tags: [FIFE, 學習藍圖, AI輔助學習, Claude]
 ---
 
 # FIFE 學習方案 · 分層藍圖
