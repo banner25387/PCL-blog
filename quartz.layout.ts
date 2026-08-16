@@ -39,10 +39,20 @@ export const defaultContentPageLayout: PageLayout = {
       ],
     }),
     Component.Explorer({
+      // 檔案依日期新→舊（無日期者殿後）；資料夾維持字母序並排在檔案前
       sortFn: (a, b) => {
-        const dateA = new Date(a.dates?.published ?? a.dates?.created ?? 0)
-        const dateB = new Date(b.dates?.published ?? b.dates?.created ?? 0)
-        return dateB.getTime() - dateA.getTime()
+        if (a.isFolder && b.isFolder) {
+          return a.displayName.localeCompare(b.displayName, undefined, {
+            numeric: true,
+            sensitivity: "base",
+          })
+        }
+        if (a.isFolder !== b.isFolder) {
+          return a.isFolder ? -1 : 1
+        }
+        const dateA = a.data?.date ? new Date(a.data.date).getTime() : 0
+        const dateB = b.data?.date ? new Date(b.data.date).getTime() : 0
+        return dateB - dateA
       },
     }),
     Component.DesktopOnly(Component.RecentNotes({ title: "📁 Tags", limit: 0, linkToMore: "tags" })),
@@ -82,7 +92,23 @@ export const defaultListPageLayout: PageLayout = {
         { Component: Component.Darkmode() },
       ],
     }),
-    Component.Explorer(),
+    Component.Explorer({
+      // 與文章頁 Explorer 同步：檔案依日期新→舊、資料夾字母序在前
+      sortFn: (a, b) => {
+        if (a.isFolder && b.isFolder) {
+          return a.displayName.localeCompare(b.displayName, undefined, {
+            numeric: true,
+            sensitivity: "base",
+          })
+        }
+        if (a.isFolder !== b.isFolder) {
+          return a.isFolder ? -1 : 1
+        }
+        const dateA = a.data?.date ? new Date(a.data.date).getTime() : 0
+        const dateB = b.data?.date ? new Date(b.data.date).getTime() : 0
+        return dateB - dateA
+      },
+    }),
   ],
   right: [],
 }
